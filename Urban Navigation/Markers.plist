@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Markers</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>NUS I-Cube Center</string>
+			<key>Latitude</key>
+			<real>1.29234</real>
+			<key>Longitude</key>
+			<real>103.775783</real>
+			<key>Description</key>
+			<string>IDMI was officially set up as a research institute in NUS, on 23 April 2007. With the strong support of various Faculties, the Institute has become operational right away with 8 cross-disciplinary lab</string>
+		</dict>
+	</array>
+</dict>
+</plist>

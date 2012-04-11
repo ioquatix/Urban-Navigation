@@ -1,5 +1,5 @@
 //
-//  UNViewController.h
+//  UNTexturedBox.h
 //  Urban Navigation
 //
 //  Created by Samuel Williams on 10/04/12.
@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UNViewController : UIViewController
+@interface UNTexturedBox : UIView
+
+- (void)setupBoxView;
+
+@property(strong,nonatomic) UIColor * backgroundFill;
 
 @end

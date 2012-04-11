@@ -7,6 +7,7 @@
 //
 
 #import "UNAppDelegate.h"
+#import "UNMapViewController.h"
 
 @implementation UNAppDelegate
 
@@ -15,6 +16,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+	self.window.rootViewController = [[UNMapViewController alloc] init];
+	[self.window makeKeyAndVisible];
+	
     return YES;
 }
 							
