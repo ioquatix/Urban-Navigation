@@ -6,6 +6,16 @@
 	<array>
 		<dict>
 			<key>Name</key>
+			<string>Vivo City</string>
+			<key>Longitude</key>
+			<string>103.822861</string>
+			<key>Latitude</key>
+			<real>1.265385</real>
+			<key>Description</key>
+			<string>Great Places &amp; Endless Activities. Discover Singapore at its Finest!</string>
+		</dict>
+		<dict>
+			<key>Name</key>
 			<string>NUS I-Cube Center</string>
 			<key>Latitude</key>
 			<real>1.29234</real>
