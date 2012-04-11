@@ -10,7 +10,7 @@
 
 @implementation UNMarker
 
-@synthesize name = _name, description = _description, coordinate = _coordinate, image = _image;
+@synthesize name = _name, description = _description, coordinate = _coordinate, image = _image, selectionColor = _selectionColor;
 
 - (NSString *)title {
 	return self.name;
@@ -22,9 +22,9 @@
 
 - (UIImage *)image {
 	if (!_image) {
-		NSString * imagePath = [[NSBundle mainBundle] pathForResource:self.name ofType:@"jpg" inDirectory:@"Markers"];
+		//NSString * imagePath = [[NSBundle mainBundle] pathForResource:self.name ofType:@"jpg" inDirectory:@"Markers"];
 		
-		self.image = [UIImage imageWithContentsOfFile:imagePath];
+		self.image = [UIImage imageNamed:[NSString stringWithFormat:@"Markers/%@.jpg", self.name]];
 	}
 	
 	return _image;

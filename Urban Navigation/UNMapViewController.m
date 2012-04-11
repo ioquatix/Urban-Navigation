@@ -8,15 +8,17 @@
 
 #import "UNMapViewController.h"
 #import "UNTexturedBox.h"
-#import "UNMarker.h"
 
 @interface UNMapViewController ()
-
+@property(nonatomic,retain,readwrite) UNMarker * currentlySelectedMarker;
+@property(nonatomic,retain,readwrite) UNMarker * startMarker;
+@property(nonatomic,retain,readwrite) UNMarker * endMarker;
 @end
 
 @implementation UNMapViewController
 
-@synthesize markers = _markers;
+@synthesize markers = _markers, currentlySelectedMarker = _currentlySelectedMarker;
+@synthesize startMarker = _startMarker, endMarker = _endMarker;
 
 - (void)loadMarkersFromPath:(NSString*)path {
 	NSDictionary * records = [NSDictionary dictionaryWithContentsOfFile:path];
@@ -69,6 +71,16 @@
 	[self didChangeValueForKey:@"markers"];
 }
 
+- (void) focusOnSingapore {
+	MKCoordinateRegion region = { {0.0, 0.0 }, { 0.0, 0.0 } }; 
+	region.center.latitude = 1.3667; 
+	region.center.longitude = 103.8;
+	region.span.longitudeDelta = 0.25f;
+	region.span.latitudeDelta = 0.25f;
+	[mapView setRegion:region animated:YES];     
+	[mapView regionThatFits:region];
+}
+
 - (void)loadView {
 	[super loadView];
 	
@@ -80,6 +92,7 @@
 	//navigationView = [[UNTexturedBox alloc] initWithFrame:CGRectMake(10, 10, 330, 100)];
 	navigationView.frame = CGRectMake(10, 10, 330, 100);
 	[mapView addSubview:navigationView];
+	[self focusOnSingapore];
 	
 	CGRect locationViewFrame = locationView.frame;
 	locationViewFrame.origin.x = 0;
@@ -118,6 +131,8 @@
 	navigationDescriptionLabel.text = marker.subtitle;
 	navigationImageView.image = marker.image;
 	
+	self.currentlySelectedMarker = marker;
+	
 	CGRect locationViewFrame = locationView.frame;
 	locationViewFrame.origin.x = 0;
 	locationViewFrame.origin.y =locationView.superview.frame.size.height - locationViewFrame.size.height;
@@ -132,9 +147,39 @@
 	locationViewFrame.origin.x = 0;
 	locationViewFrame.origin.y = locationView.superview.frame.size.height;
 	
+	self.currentlySelectedMarker = nil;
+	
 	[UIView animateWithDuration:0.5 animations:^{
 		locationView.frame = locationViewFrame;
 	}];
+}
+
+- (void)startHereButtonPressed:(id)sender {
+	self.startMarker = self.currentlySelectedMarker;
+}
+
+- (void)endHereButtonPressed:(id)sender {
+	self.endMarker = self.currentlySelectedMarker;
+}
+
+- (void)setStartMarker:(UNMarker *)startMarker {
+	[self willChangeValueForKey:@"startMarker"];
+	
+	navigationStartField.text = startMarker.title;
+	
+	_startMarker = startMarker;
+	
+	[self didChangeValueForKey:@"startMarker"];
+}
+
+- (void)setEndMarker:(UNMarker *)endMarker {
+	[self willChangeValueForKey:@"endMarker"];
+	
+	navigationEndField.text = endMarker.title;
+	
+	_endMarker = endMarker;
+	
+	[self didChangeValueForKey:@"endMarker"];
 }
 
 @end

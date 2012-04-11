@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
+#import "UNMarker.h"
+
 @interface UNMapViewController : UIViewController <MKMapViewDelegate> {
 	MKMapView * mapView;
 	
@@ -17,9 +19,18 @@
 	IBOutlet UILabel * navigationDescriptionLabel;
 	IBOutlet UIImageView * navigationImageView;
 	
+	IBOutlet UITextField * navigationStartField, * navigationEndField;
+	
 	IBOutlet UIView * locationView;
 }
 
 @property(nonatomic,retain) NSArray * markers;
+@property(nonatomic,retain,readonly) UNMarker * currentlySelectedMarker;
+
+@property(nonatomic,retain,readonly) UNMarker * startMarker;
+@property(nonatomic,retain,readonly) UNMarker * endMarker;
+
+- (IBAction)startHereButtonPressed:(id)sender;
+- (IBAction)endHereButtonPressed:(id)sender;
 
 @end

@@ -16,6 +16,8 @@
 @property(assign,nonatomic) CLLocationCoordinate2D coordinate;
 @property(strong,nonatomic) UIImage * image;
 
+@property(strong,nonatomic) UIColor * selectionColor;
+
 - (NSString *)title;
 - (NSString *)subtitle;
 
