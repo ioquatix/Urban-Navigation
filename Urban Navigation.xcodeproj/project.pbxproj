@@ -26,6 +26,21 @@
 		7E6260D415355B1300D595F2 /* Markers in Resources */ = {isa = PBXBuildFile; fileRef = 7E6260D315355B1300D595F2 /* Markers */; };
 		7E6260D71535997E00D595F2 /* UNButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6260D61535997E00D595F2 /* UNButton.m */; };
 		7EDADD281536913800FB6255 /* UNMapView in Resources */ = {isa = PBXBuildFile; fileRef = 7EDADD271536913800FB6255 /* UNMapView */; };
+		90C6E5641536DF6400E2E421 /* scale.bin in Resources */ = {isa = PBXBuildFile; fileRef = 90C6E5591536DF6400E2E421 /* scale.bin */; };
+		90C6E5651536DF6400E2E421 /* scale.rtl in Resources */ = {isa = PBXBuildFile; fileRef = 90C6E55A1536DF6400E2E421 /* scale.rtl */; };
+		90C6E5661536DF6400E2E421 /* scale10.ags in Resources */ = {isa = PBXBuildFile; fileRef = 90C6E55B1536DF6400E2E421 /* scale10.ags */; };
+		90C6E5671536DF6400E2E421 /* scale11.ags in Resources */ = {isa = PBXBuildFile; fileRef = 90C6E55C1536DF6400E2E421 /* scale11.ags */; };
+		90C6E5681536DF6400E2E421 /* scale12.ags in Resources */ = {isa = PBXBuildFile; fileRef = 90C6E55D1536DF6400E2E421 /* scale12.ags */; };
+		90C6E5691536DF6400E2E421 /* scale13.ags in Resources */ = {isa = PBXBuildFile; fileRef = 90C6E55E1536DF6400E2E421 /* scale13.ags */; };
+		90C6E56A1536DF6400E2E421 /* scale14.ags in Resources */ = {isa = PBXBuildFile; fileRef = 90C6E55F1536DF6400E2E421 /* scale14.ags */; };
+		90C6E56B1536DF6400E2E421 /* scale6.ags in Resources */ = {isa = PBXBuildFile; fileRef = 90C6E5601536DF6400E2E421 /* scale6.ags */; };
+		90C6E56C1536DF6400E2E421 /* scale7.ags in Resources */ = {isa = PBXBuildFile; fileRef = 90C6E5611536DF6400E2E421 /* scale7.ags */; };
+		90C6E56D1536DF6400E2E421 /* scale8.ags in Resources */ = {isa = PBXBuildFile; fileRef = 90C6E5621536DF6400E2E421 /* scale8.ags */; };
+		90C6E56E1536DF6400E2E421 /* scale9.ags in Resources */ = {isa = PBXBuildFile; fileRef = 90C6E5631536DF6400E2E421 /* scale9.ags */; };
+		90C6E5821536E00000E2E421 /* UNRoute.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90C6E5811536E00000E2E421 /* UNRoute.mm */; };
+		90C6E5831536E69500E2E421 /* libMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C6E5751536DF7C00E2E421 /* libMap.a */; };
+		90C6E5851536E6A000E2E421 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C6E5841536E6A000E2E421 /* AVFoundation.framework */; };
+		90C6E5881536F7F800E2E421 /* UNTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C6E5871536F7F800E2E421 /* UNTurn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +72,28 @@
 		7E6260D51535997E00D595F2 /* UNButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNButton.h; sourceTree = "<group>"; };
 		7E6260D61535997E00D595F2 /* UNButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNButton.m; sourceTree = "<group>"; };
 		7EDADD271536913800FB6255 /* UNMapView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UNMapView; sourceTree = "<group>"; };
+		90C6E5591536DF6400E2E421 /* scale.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = scale.bin; sourceTree = "<group>"; };
+		90C6E55A1536DF6400E2E421 /* scale.rtl */ = {isa = PBXFileReference; lastKnownFileType = file; path = scale.rtl; sourceTree = "<group>"; };
+		90C6E55B1536DF6400E2E421 /* scale10.ags */ = {isa = PBXFileReference; lastKnownFileType = file; path = scale10.ags; sourceTree = "<group>"; };
+		90C6E55C1536DF6400E2E421 /* scale11.ags */ = {isa = PBXFileReference; lastKnownFileType = file; path = scale11.ags; sourceTree = "<group>"; };
+		90C6E55D1536DF6400E2E421 /* scale12.ags */ = {isa = PBXFileReference; lastKnownFileType = file; path = scale12.ags; sourceTree = "<group>"; };
+		90C6E55E1536DF6400E2E421 /* scale13.ags */ = {isa = PBXFileReference; lastKnownFileType = file; path = scale13.ags; sourceTree = "<group>"; };
+		90C6E55F1536DF6400E2E421 /* scale14.ags */ = {isa = PBXFileReference; lastKnownFileType = file; path = scale14.ags; sourceTree = "<group>"; };
+		90C6E5601536DF6400E2E421 /* scale6.ags */ = {isa = PBXFileReference; lastKnownFileType = file; path = scale6.ags; sourceTree = "<group>"; };
+		90C6E5611536DF6400E2E421 /* scale7.ags */ = {isa = PBXFileReference; lastKnownFileType = file; path = scale7.ags; sourceTree = "<group>"; };
+		90C6E5621536DF6400E2E421 /* scale8.ags */ = {isa = PBXFileReference; lastKnownFileType = file; path = scale8.ags; sourceTree = "<group>"; };
+		90C6E5631536DF6400E2E421 /* scale9.ags */ = {isa = PBXFileReference; lastKnownFileType = file; path = scale9.ags; sourceTree = "<group>"; };
+		90C6E5711536DF7C00E2E421 /* libMap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMap.a; sourceTree = "<group>"; };
+		90C6E5731536DF7C00E2E421 /* libMap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMap.a; sourceTree = "<group>"; };
+		90C6E5751536DF7C00E2E421 /* libMap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMap.a; sourceTree = "<group>"; };
+		90C6E5771536DF7C00E2E421 /* libMap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMap.a; sourceTree = "<group>"; };
+		90C6E57D1536DF8700E2E421 /* Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Navigation.h; sourceTree = "<group>"; };
+		90C6E57E1536DF8700E2E421 /* QMapEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMapEngine.h; sourceTree = "<group>"; };
+		90C6E5801536E00000E2E421 /* UNRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNRoute.h; sourceTree = "<group>"; };
+		90C6E5811536E00000E2E421 /* UNRoute.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UNRoute.mm; sourceTree = "<group>"; };
+		90C6E5841536E6A000E2E421 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		90C6E5861536F7F800E2E421 /* UNTurn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNTurn.h; sourceTree = "<group>"; };
+		90C6E5871536F7F800E2E421 /* UNTurn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNTurn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +101,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C6E5851536E6A000E2E421 /* AVFoundation.framework in Frameworks */,
 				7E6260B6153414F400D595F2 /* QuartzCore.framework in Frameworks */,
 				7E6260AB1534079500D595F2 /* MapKit.framework in Frameworks */,
 				7E62608B1533E5AD00D595F2 /* UIKit.framework in Frameworks */,
 				7E62608D1533E5AD00D595F2 /* Foundation.framework in Frameworks */,
 				7E62608F1533E5AD00D595F2 /* CoreGraphics.framework in Frameworks */,
+				90C6E5831536E69500E2E421 /* libMap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +117,7 @@
 		7E62607B1533E5AC00D595F2 = {
 			isa = PBXGroup;
 			children = (
+				90C6E53F1536DE2A00E2E421 /* QMapEngine */,
 				7E6260901533E5AD00D595F2 /* Urban Navigation */,
 				7E6260891533E5AD00D595F2 /* Frameworks */,
 				7E6260871533E5AD00D595F2 /* Products */,
@@ -95,6 +135,7 @@
 		7E6260891533E5AD00D595F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90C6E5841536E6A000E2E421 /* AVFoundation.framework */,
 				7E6260B5153414F400D595F2 /* QuartzCore.framework */,
 				7E6260AA1534079500D595F2 /* MapKit.framework */,
 				7E62608A1533E5AD00D595F2 /* UIKit.framework */,
@@ -107,6 +148,10 @@
 		7E6260901533E5AD00D595F2 /* Urban Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				90C6E5861536F7F800E2E421 /* UNTurn.h */,
+				90C6E5871536F7F800E2E421 /* UNTurn.m */,
+				90C6E5801536E00000E2E421 /* UNRoute.h */,
+				90C6E5811536E00000E2E421 /* UNRoute.mm */,
 				7E6260AC1534092400D595F2 /* Application.xib */,
 				7E6260991533E5AD00D595F2 /* UNAppDelegate.h */,
 				7E62609A1533E5AD00D595F2 /* UNAppDelegate.m */,
@@ -139,6 +184,89 @@
 				7E6260BF1534397900D595F2 /* Markers.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90C6E53F1536DE2A00E2E421 /* QMapEngine */ = {
+			isa = PBXGroup;
+			children = (
+				90C6E57C1536DF8700E2E421 /* include */,
+				90C6E56F1536DF7C00E2E421 /* lib */,
+				90C6E5581536DF6400E2E421 /* map singapore en v2 */,
+			);
+			name = QMapEngine;
+			sourceTree = "<group>";
+		};
+		90C6E5581536DF6400E2E421 /* map singapore en v2 */ = {
+			isa = PBXGroup;
+			children = (
+				90C6E5591536DF6400E2E421 /* scale.bin */,
+				90C6E55A1536DF6400E2E421 /* scale.rtl */,
+				90C6E55B1536DF6400E2E421 /* scale10.ags */,
+				90C6E55C1536DF6400E2E421 /* scale11.ags */,
+				90C6E55D1536DF6400E2E421 /* scale12.ags */,
+				90C6E55E1536DF6400E2E421 /* scale13.ags */,
+				90C6E55F1536DF6400E2E421 /* scale14.ags */,
+				90C6E5601536DF6400E2E421 /* scale6.ags */,
+				90C6E5611536DF6400E2E421 /* scale7.ags */,
+				90C6E5621536DF6400E2E421 /* scale8.ags */,
+				90C6E5631536DF6400E2E421 /* scale9.ags */,
+			);
+			name = "map singapore en v2";
+			path = "QMapEngine/resources/Map/map singapore en v2";
+			sourceTree = "<group>";
+		};
+		90C6E56F1536DF7C00E2E421 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				90C6E5701536DF7C00E2E421 /* Debug-iphoneos */,
+				90C6E5721536DF7C00E2E421 /* Debug-iphonesimulator */,
+				90C6E5741536DF7C00E2E421 /* Release-iphoneos */,
+				90C6E5761536DF7C00E2E421 /* Release-iphonesimulator */,
+			);
+			name = lib;
+			path = QMapEngine/lib;
+			sourceTree = "<group>";
+		};
+		90C6E5701536DF7C00E2E421 /* Debug-iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				90C6E5711536DF7C00E2E421 /* libMap.a */,
+			);
+			path = "Debug-iphoneos";
+			sourceTree = "<group>";
+		};
+		90C6E5721536DF7C00E2E421 /* Debug-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				90C6E5731536DF7C00E2E421 /* libMap.a */,
+			);
+			path = "Debug-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		90C6E5741536DF7C00E2E421 /* Release-iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				90C6E5751536DF7C00E2E421 /* libMap.a */,
+			);
+			path = "Release-iphoneos";
+			sourceTree = "<group>";
+		};
+		90C6E5761536DF7C00E2E421 /* Release-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				90C6E5771536DF7C00E2E421 /* libMap.a */,
+			);
+			path = "Release-iphonesimulator";
+			sourceTree = "<group>";
+		};
+		90C6E57C1536DF8700E2E421 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				90C6E57D1536DF8700E2E421 /* Navigation.h */,
+				90C6E57E1536DF8700E2E421 /* QMapEngine.h */,
+			);
+			name = include;
+			path = QMapEngine/include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +328,17 @@
 				7E6260C01534397900D595F2 /* Markers.plist in Resources */,
 				7E6260D415355B1300D595F2 /* Markers in Resources */,
 				7EDADD281536913800FB6255 /* UNMapView in Resources */,
+				90C6E5641536DF6400E2E421 /* scale.bin in Resources */,
+				90C6E5651536DF6400E2E421 /* scale.rtl in Resources */,
+				90C6E5661536DF6400E2E421 /* scale10.ags in Resources */,
+				90C6E5671536DF6400E2E421 /* scale11.ags in Resources */,
+				90C6E5681536DF6400E2E421 /* scale12.ags in Resources */,
+				90C6E5691536DF6400E2E421 /* scale13.ags in Resources */,
+				90C6E56A1536DF6400E2E421 /* scale14.ags in Resources */,
+				90C6E56B1536DF6400E2E421 /* scale6.ags in Resources */,
+				90C6E56C1536DF6400E2E421 /* scale7.ags in Resources */,
+				90C6E56D1536DF6400E2E421 /* scale8.ags in Resources */,
+				90C6E56E1536DF6400E2E421 /* scale9.ags in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +356,8 @@
 				7E6260BB1534344F00D595F2 /* UNRoundedBox.m in Sources */,
 				7E6260BE1534383C00D595F2 /* UNMarker.m in Sources */,
 				7E6260D71535997E00D595F2 /* UNButton.m in Sources */,
+				90C6E5821536E00000E2E421 /* UNRoute.mm in Sources */,
+				90C6E5881536F7F800E2E421 /* UNTurn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +428,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Urban Navigation/Urban Navigation-Prefix.pch";
 				INFOPLIST_FILE = "Urban Navigation/Urban Navigation-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/QMapEngine/lib/Debug-iphoneos\"",
+					"\"$(SRCROOT)/QMapEngine/lib/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/QMapEngine/lib/Release-iphoneos\"",
+					"\"$(SRCROOT)/QMapEngine/lib/Release-iphonesimulator\"",
+				);
+				OTHER_CFLAGS = "-DQ_MAP_ENGINE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -298,6 +447,17 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Urban Navigation/Urban Navigation-Prefix.pch";
 				INFOPLIST_FILE = "Urban Navigation/Urban Navigation-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/QMapEngine/lib/Debug-iphoneos\"",
+					"\"$(SRCROOT)/QMapEngine/lib/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/QMapEngine/lib/Release-iphoneos\"",
+					"\"$(SRCROOT)/QMapEngine/lib/Release-iphonesimulator\"",
+				);
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"-DQ_MAP_ENGINE",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

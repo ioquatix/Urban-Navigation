@@ -33,4 +33,6 @@
 - (IBAction)startHereButtonPressed:(id)sender;
 - (IBAction)endHereButtonPressed:(id)sender;
 
+- (IBAction)calculateRoute:(id)sender;
+
 @end

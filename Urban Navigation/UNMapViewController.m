@@ -8,6 +8,7 @@
 
 #import "UNMapViewController.h"
 #import "UNTexturedBox.h"
+#import "UNRoute.h"
 
 @interface UNMapViewController ()
 @property(nonatomic,retain,readwrite) UNMarker * currentlySelectedMarker;
@@ -184,6 +185,16 @@
 	_endMarker = endMarker;
 	
 	[self didChangeValueForKey:@"endMarker"];
+}
+
+- (void)calculateRoute:(id)sender {
+	UNRoute * route = [UNRoute bestRouteFrom:self.startMarker.coordinate to:self.endMarker.coordinate];
+	
+	if (route) {
+		NSLog(@"Route: %@", route);
+	} else {
+		NSLog(@"No route found!");
+	}
 }
 
 @end
