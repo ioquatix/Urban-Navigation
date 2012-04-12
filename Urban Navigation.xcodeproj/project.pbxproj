@@ -25,6 +25,7 @@
 		7E6260C01534397900D595F2 /* Markers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E6260BF1534397900D595F2 /* Markers.plist */; };
 		7E6260D415355B1300D595F2 /* Markers in Resources */ = {isa = PBXBuildFile; fileRef = 7E6260D315355B1300D595F2 /* Markers */; };
 		7E6260D71535997E00D595F2 /* UNButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6260D61535997E00D595F2 /* UNButton.m */; };
+		7EDADD281536913800FB6255 /* UNMapView in Resources */ = {isa = PBXBuildFile; fileRef = 7EDADD271536913800FB6255 /* UNMapView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		7E6260D315355B1300D595F2 /* Markers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Markers; sourceTree = "<group>"; };
 		7E6260D51535997E00D595F2 /* UNButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNButton.h; sourceTree = "<group>"; };
 		7E6260D61535997E00D595F2 /* UNButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNButton.m; sourceTree = "<group>"; };
+		7EDADD271536913800FB6255 /* UNMapView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UNMapView; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		7E6260911533E5AD00D595F2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7EDADD271536913800FB6255 /* UNMapView */,
 				7E6260D315355B1300D595F2 /* Markers */,
 				7E6260B115340E8400D595F2 /* Background@2x.jpg */,
 				7E6260921533E5AD00D595F2 /* Urban Navigation-Info.plist */,
@@ -196,6 +199,7 @@
 				7E6260B815341CC100D595F2 /* UNMapView.xib in Resources */,
 				7E6260C01534397900D595F2 /* Markers.plist in Resources */,
 				7E6260D415355B1300D595F2 /* Markers in Resources */,
+				7EDADD281536913800FB6255 /* UNMapView in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +322,7 @@
 				7E6260A91533E5AD00D595F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

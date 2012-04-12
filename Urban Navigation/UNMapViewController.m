@@ -142,7 +142,7 @@
 	}];
 }
 
-- (void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view {
+- (void)hideLocationView {
 	CGRect locationViewFrame = locationView.frame;
 	locationViewFrame.origin.x = 0;
 	locationViewFrame.origin.y = locationView.superview.frame.size.height;
@@ -152,6 +152,10 @@
 	[UIView animateWithDuration:0.5 animations:^{
 		locationView.frame = locationViewFrame;
 	}];
+}
+
+- (void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view {
+
 }
 
 - (void)startHereButtonPressed:(id)sender {
