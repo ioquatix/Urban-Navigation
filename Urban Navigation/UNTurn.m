@@ -2,8 +2,8 @@
 //  UNTurn.m
 //  Urban Navigation
 //
-//  Created by Lab MIME on 12/4/12.
-//  Copyright (c) 2012 Orion Transfer Ltd. All rights reserved.
+//  Created by Samuel Williams on 12/4/12.
+//  Copyright (c) 2012 Samuel Williams. All rights reserved.
 //
 
 #import "UNTurn.h"
