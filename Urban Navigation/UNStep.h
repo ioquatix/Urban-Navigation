@@ -9,10 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface UNTurn : NSObject
+@interface UNStep : NSObject
 
 @property(nonatomic,assign) CLLocationCoordinate2D coordinate;
 @property(nonatomic,retain) NSString * name;
+@property(nonatomic,retain) NSString * action;
+@property(nonatomic,assign) CGFloat distance;
+
+@property(nonatomic,assign) BOOL intermediate;
 
 - initWithCoder:(NSCoder *)aDecoder;
 - (void)encodeWithCoder:(NSCoder *)coder;

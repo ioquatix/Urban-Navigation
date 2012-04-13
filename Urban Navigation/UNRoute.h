@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
 @interface UNRoute : NSObject
 
@@ -18,6 +19,8 @@
 
 + (UNRoute *)loadFromPath:(NSString*)path;
 - (void)saveToPath:(NSString*)path;
+
+- (MKPolyline *)polylineValue;
 
 #ifdef Q_MAP_ENGINE
 /// If the map engine has been provided and compiled into the application, this function will calculate a route between two points. If there was a problem, nil is returned.

@@ -10,16 +10,21 @@
 #import "UNTexturedBox.h"
 #import "UNRoute.h"
 
+#import "UNRouteViewController.h"
+
 @interface UNMapViewController ()
 @property(nonatomic,retain,readwrite) UNMarker * currentlySelectedMarker;
 @property(nonatomic,retain,readwrite) UNMarker * startMarker;
 @property(nonatomic,retain,readwrite) UNMarker * endMarker;
+
+@property(nonatomic,retain) MKPolyline * currentRoutePolyline;
 @end
 
 @implementation UNMapViewController
 
 @synthesize markers = _markers, currentlySelectedMarker = _currentlySelectedMarker;
 @synthesize startMarker = _startMarker, endMarker = _endMarker;
+@synthesize currentRoutePolyline = _currentRoutePolyline;
 
 - (void)loadMarkersFromPath:(NSString*)path {
 	NSDictionary * records = [NSDictionary dictionaryWithContentsOfFile:path];
@@ -159,12 +164,40 @@
 
 }
 
+- (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id)overlay {
+	if (overlay == self.currentRoutePolyline) {
+		MKPolylineView * routeView = [[MKPolylineView alloc] initWithPolyline:self.currentRoutePolyline];
+		
+		routeView.fillColor = [UIColor redColor];
+		routeView.strokeColor = [UIColor redColor];
+		routeView.lineWidth = 3;
+					
+		return routeView;
+	}
+	
+	return nil;
+}
+
 - (void)startHereButtonPressed:(id)sender {
 	self.startMarker = self.currentlySelectedMarker;
 }
 
 - (void)endHereButtonPressed:(id)sender {
 	self.endMarker = self.currentlySelectedMarker;
+}
+
+- (void)updateRouteOverlay {
+	UNRoute * route = [UNRoute bestRouteFrom:self.startMarker.coordinate to:self.endMarker.coordinate];
+	
+	if (route) {
+		if (self.currentRoutePolyline) {
+			[mapView removeOverlay:self.currentRoutePolyline];
+		}
+		
+		self.currentRoutePolyline = [route polylineValue];
+		
+		[mapView addOverlay:self.currentRoutePolyline];
+	}
 }
 
 - (void)setStartMarker:(UNMarker *)startMarker {
@@ -175,6 +208,8 @@
 	_startMarker = startMarker;
 	
 	[self didChangeValueForKey:@"startMarker"];
+
+	[self updateRouteOverlay];
 }
 
 - (void)setEndMarker:(UNMarker *)endMarker {
@@ -185,6 +220,8 @@
 	_endMarker = endMarker;
 	
 	[self didChangeValueForKey:@"endMarker"];
+	
+	[self updateRouteOverlay];
 }
 
 - (void)calculateRoute:(id)sender {
@@ -192,6 +229,11 @@
 	
 	if (route) {
 		NSLog(@"Route: %@", route);
+		
+		UNRouteViewController * routeViewController = [UNRouteViewController new];
+		routeViewController.route = route;
+		
+		 self.view.window.rootViewController = routeViewController;
 	} else {
 		NSLog(@"No route found!");
 	}

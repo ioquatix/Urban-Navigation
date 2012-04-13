@@ -6,11 +6,11 @@
 //  Copyright (c) 2012 Samuel Williams. All rights reserved.
 //
 
-#import "UNTurn.h"
+#import "UNStep.h"
 
-@implementation UNTurn
+@implementation UNStep
 
-@synthesize coordinate = _coordinate, name = _name;
+@synthesize coordinate = _coordinate, name = _name, action = _action, distance = _distance, intermediate = _intermediate;
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
 	self = [super init];
@@ -19,6 +19,8 @@
 		_coordinate.latitude = [aDecoder decodeDoubleForKey:@"latitude"];
 		_coordinate.longitude = [aDecoder decodeDoubleForKey:@"longitude"];
 		self.name = [aDecoder decodeObjectForKey:@"name"];
+		self.action = [aDecoder decodeObjectForKey:@"action"];
+		self.distance = [aDecoder decodeFloatForKey:@"distance"];
 	}
 	
 	return self;
@@ -28,6 +30,8 @@
 	[coder encodeDouble:_coordinate.latitude forKey:@"latitude"];
 	[coder encodeDouble:_coordinate.longitude forKey:@"longitude"];
 	[coder encodeObject:self.name forKey:@"name"];
+	[coder encodeObject:self.action forKey:@"action"];
+	[coder encodeFloat:self.distance forKey:@"distance"];
 }
 
 - (NSString *)description {
