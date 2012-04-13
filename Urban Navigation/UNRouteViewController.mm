@@ -9,6 +9,9 @@
 #import "UNRouteViewController.h"
 #import "UNRoute.h"
 
+#import "UNRouteController.h"
+#import "ARABrowserViewController.h"
+
 @implementation UNRouteViewController
 
 @synthesize route = _route;
@@ -28,7 +31,13 @@
 }
 
 - (IBAction)startAugmentedReality:(id)sender {
+	ARABrowserViewController * browserViewController = [[ARABrowserViewController new] autorelease];
+	UNRouteController * routeController = [[UNRouteController new] autorelease];
+	[routeController setRoute:self.route];
 	
+	browserViewController.pathController = routeController;
+	
+	self.view.window.rootViewController = browserViewController;
 }
 
 @end

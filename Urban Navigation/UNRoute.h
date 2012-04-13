@@ -10,9 +10,11 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
+@class ARAPath;
+
 @interface UNRoute : NSObject
 
-@property(nonatomic,retain) NSArray * turns;
+@property(nonatomic,retain) NSArray * steps;
 
 - (id)initWithCoder:(NSCoder *)aDecoder;
 - (void)encodeWithCoder:(NSCoder *)coder;

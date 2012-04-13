@@ -42,11 +42,22 @@
 		90C6E5851536E6A000E2E421 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C6E5841536E6A000E2E421 /* AVFoundation.framework */; };
 		90C6E5881536F7F800E2E421 /* UNStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C6E5871536F7F800E2E421 /* UNStep.m */; };
 		90E3EFEA1537CD090023A65D /* UNRouteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E3EFE91537CD090023A65D /* UNRouteView.xib */; };
-		90E3EFEE1537CD1D0023A65D /* UNRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3EFED1537CD1D0023A65D /* UNRouteViewController.m */; };
+		90E3EFEE1537CD1D0023A65D /* UNRouteViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90E3EFED1537CD1D0023A65D /* UNRouteViewController.mm */; };
 		90E3EFF11537CE230023A65D /* UNRouteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3EFF01537CE230023A65D /* UNRouteTableViewController.m */; };
 		90E3EFF41537D1520023A65D /* UNRouteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3EFF31537D1520023A65D /* UNRouteTableViewCell.m */; };
 		90E3EFF9153817000023A65D /* NSObject+Dump.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3EFF8153817000023A65D /* NSObject+Dump.m */; };
-		90F6911D15381D3E00E353C4 /* Dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90F6911C15381D3E00E353C4 /* Dummy.cpp */; };
+		90F6924F15382CC100E353C4 /* libHITLabNZAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F6918E15382CC100E353C4 /* libHITLabNZAR.a */; };
+		90F6931015382CFA00E353C4 /* ARABrowserViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90F692FC15382CF900E353C4 /* ARABrowserViewController.mm */; };
+		90F6931115382CFA00E353C4 /* ARAPath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90F692FE15382CF900E353C4 /* ARAPath.mm */; };
+		90F6931215382CFA00E353C4 /* ARAPathController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90F6930015382CF900E353C4 /* ARAPathController.mm */; };
+		90F6931415382CFA00E353C4 /* ARASegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90F6930415382CF900E353C4 /* ARASegment.mm */; };
+		90F6932A15382F5B00E353C4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F6932915382F5B00E353C4 /* OpenGLES.framework */; };
+		90F6932C15382F6600E353C4 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F6932B15382F6600E353C4 /* CoreMotion.framework */; };
+		90F6932E15382F6D00E353C4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F6932D15382F6C00E353C4 /* CoreVideo.framework */; };
+		90F6933015382F7600E353C4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F6932F15382F7600E353C4 /* CoreMedia.framework */; };
+		90F6933215382F8200E353C4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F6933115382F8200E353C4 /* CoreLocation.framework */; };
+		90F693351538489200E353C4 /* UNRouteController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90F693341538489200E353C4 /* UNRouteController.mm */; };
+		90F69337153848FC00E353C4 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 90F69336153848FC00E353C4 /* Models */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,14 +113,44 @@
 		90C6E5871536F7F800E2E421 /* UNStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNStep.m; sourceTree = "<group>"; };
 		90E3EFE91537CD090023A65D /* UNRouteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UNRouteView.xib; sourceTree = "<group>"; };
 		90E3EFEC1537CD1D0023A65D /* UNRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNRouteViewController.h; sourceTree = "<group>"; };
-		90E3EFED1537CD1D0023A65D /* UNRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNRouteViewController.m; sourceTree = "<group>"; };
+		90E3EFED1537CD1D0023A65D /* UNRouteViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UNRouteViewController.mm; sourceTree = "<group>"; };
 		90E3EFEF1537CE230023A65D /* UNRouteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNRouteTableViewController.h; sourceTree = "<group>"; };
 		90E3EFF01537CE230023A65D /* UNRouteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNRouteTableViewController.m; sourceTree = "<group>"; };
 		90E3EFF21537D1520023A65D /* UNRouteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNRouteTableViewCell.h; sourceTree = "<group>"; };
 		90E3EFF31537D1520023A65D /* UNRouteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNRouteTableViewCell.m; sourceTree = "<group>"; };
 		90E3EFF7153817000023A65D /* NSObject+Dump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Dump.h"; sourceTree = "<group>"; };
 		90E3EFF8153817000023A65D /* NSObject+Dump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Dump.m"; sourceTree = "<group>"; };
-		90F6911C15381D3E00E353C4 /* Dummy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dummy.cpp; sourceTree = "<group>"; };
+		90F6918E15382CC100E353C4 /* libHITLabNZAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHITLabNZAR.a; sourceTree = "<group>"; };
+		90F6919215382CC100E353C4 /* ARBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARBrowserView.h; sourceTree = "<group>"; };
+		90F6919515382CC100E353C4 /* ARLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLocationController.h; sourceTree = "<group>"; };
+		90F6919815382CC100E353C4 /* ARModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARModel.h; sourceTree = "<group>"; };
+		90F6919915382CC100E353C4 /* ARVideoBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARVideoBackground.h; sourceTree = "<group>"; };
+		90F6919A15382CC100E353C4 /* ARVideoFrameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARVideoFrameController.h; sourceTree = "<group>"; };
+		90F6919B15382CC100E353C4 /* ARWorldLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARWorldLocation.h; sourceTree = "<group>"; };
+		90F6919C15382CC100E353C4 /* ARWorldPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARWorldPoint.h; sourceTree = "<group>"; };
+		90F6919E15382CC100E353C4 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		90F6919F15382CC100E353C4 /* Endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Endian.h; sourceTree = "<group>"; };
+		90F691A015382CC100E353C4 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
+		90F691A115382CC100E353C4 /* Quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quaternion.h; sourceTree = "<group>"; };
+		90F691A215382CC100E353C4 /* Texture2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture2D.h; sourceTree = "<group>"; };
+		90F691A315382CC100E353C4 /* Transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transform.h; sourceTree = "<group>"; };
+		90F691A415382CC100E353C4 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
+		90F692FB15382CF900E353C4 /* ARABrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARABrowserViewController.h; sourceTree = "<group>"; };
+		90F692FC15382CF900E353C4 /* ARABrowserViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARABrowserViewController.mm; sourceTree = "<group>"; };
+		90F692FD15382CF900E353C4 /* ARAPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARAPath.h; sourceTree = "<group>"; };
+		90F692FE15382CF900E353C4 /* ARAPath.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARAPath.mm; sourceTree = "<group>"; };
+		90F692FF15382CF900E353C4 /* ARAPathController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARAPathController.h; sourceTree = "<group>"; };
+		90F6930015382CF900E353C4 /* ARAPathController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARAPathController.mm; sourceTree = "<group>"; };
+		90F6930315382CF900E353C4 /* ARASegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARASegment.h; sourceTree = "<group>"; };
+		90F6930415382CF900E353C4 /* ARASegment.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARASegment.mm; sourceTree = "<group>"; };
+		90F6932915382F5B00E353C4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		90F6932B15382F6600E353C4 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		90F6932D15382F6C00E353C4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		90F6932F15382F7600E353C4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		90F6933115382F8200E353C4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		90F693331538489200E353C4 /* UNRouteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNRouteController.h; sourceTree = "<group>"; };
+		90F693341538489200E353C4 /* UNRouteController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UNRouteController.mm; sourceTree = "<group>"; };
+		90F69336153848FC00E353C4 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Models; path = "ARBrowser/ARBrowser-Arrows/Models"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +158,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F6933215382F8200E353C4 /* CoreLocation.framework in Frameworks */,
+				90F6933015382F7600E353C4 /* CoreMedia.framework in Frameworks */,
+				90F6932E15382F6D00E353C4 /* CoreVideo.framework in Frameworks */,
+				90F6932C15382F6600E353C4 /* CoreMotion.framework in Frameworks */,
+				90F6932A15382F5B00E353C4 /* OpenGLES.framework in Frameworks */,
 				90C6E5851536E6A000E2E421 /* AVFoundation.framework in Frameworks */,
 				7E6260B6153414F400D595F2 /* QuartzCore.framework in Frameworks */,
 				7E6260AB1534079500D595F2 /* MapKit.framework in Frameworks */,
@@ -124,6 +170,7 @@
 				7E62608D1533E5AD00D595F2 /* Foundation.framework in Frameworks */,
 				7E62608F1533E5AD00D595F2 /* CoreGraphics.framework in Frameworks */,
 				90C6E5831536E69500E2E421 /* libMap.a in Frameworks */,
+				90F6924F15382CC100E353C4 /* libHITLabNZAR.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +180,8 @@
 		7E62607B1533E5AC00D595F2 = {
 			isa = PBXGroup;
 			children = (
+				90F692F815382CF900E353C4 /* ARBrowser-Arrows */,
+				90F6918D15382CC100E353C4 /* libHITLabNZAR */,
 				90C6E53F1536DE2A00E2E421 /* QMapEngine */,
 				7E6260901533E5AD00D595F2 /* Urban Navigation */,
 				7E6260891533E5AD00D595F2 /* Frameworks */,
@@ -151,6 +200,11 @@
 		7E6260891533E5AD00D595F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90F6933115382F8200E353C4 /* CoreLocation.framework */,
+				90F6932F15382F7600E353C4 /* CoreMedia.framework */,
+				90F6932D15382F6C00E353C4 /* CoreVideo.framework */,
+				90F6932B15382F6600E353C4 /* CoreMotion.framework */,
+				90F6932915382F5B00E353C4 /* OpenGLES.framework */,
 				90C6E5841536E6A000E2E421 /* AVFoundation.framework */,
 				7E6260B5153414F400D595F2 /* QuartzCore.framework */,
 				7E6260AA1534079500D595F2 /* MapKit.framework */,
@@ -164,13 +218,15 @@
 		7E6260901533E5AD00D595F2 /* Urban Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				90F6911C15381D3E00E353C4 /* Dummy.cpp */,
+				90F69336153848FC00E353C4 /* Models */,
 				90E3EFF7153817000023A65D /* NSObject+Dump.h */,
 				90E3EFF8153817000023A65D /* NSObject+Dump.m */,
 				90C6E5861536F7F800E2E421 /* UNStep.h */,
 				90C6E5871536F7F800E2E421 /* UNStep.m */,
 				90C6E5801536E00000E2E421 /* UNRoute.h */,
 				90C6E5811536E00000E2E421 /* UNRoute.m */,
+				90F693331538489200E353C4 /* UNRouteController.h */,
+				90F693341538489200E353C4 /* UNRouteController.mm */,
 				7E6260AC1534092400D595F2 /* Application.xib */,
 				7E6260991533E5AD00D595F2 /* UNAppDelegate.h */,
 				7E62609A1533E5AD00D595F2 /* UNAppDelegate.m */,
@@ -179,7 +235,7 @@
 				7E6260A31533E5AD00D595F2 /* UNMapViewController.m */,
 				90E3EFE91537CD090023A65D /* UNRouteView.xib */,
 				90E3EFEC1537CD1D0023A65D /* UNRouteViewController.h */,
-				90E3EFED1537CD1D0023A65D /* UNRouteViewController.m */,
+				90E3EFED1537CD1D0023A65D /* UNRouteViewController.mm */,
 				90E3EFEF1537CE230023A65D /* UNRouteTableViewController.h */,
 				90E3EFF01537CE230023A65D /* UNRouteTableViewController.m */,
 				90E3EFF21537D1520023A65D /* UNRouteTableViewCell.h */,
@@ -295,6 +351,53 @@
 			path = QMapEngine/include;
 			sourceTree = "<group>";
 		};
+		90F6918D15382CC100E353C4 /* libHITLabNZAR */ = {
+			isa = PBXGroup;
+			children = (
+				90F6918E15382CC100E353C4 /* libHITLabNZAR.a */,
+				90F6918F15382CC100E353C4 /* source */,
+			);
+			name = libHITLabNZAR;
+			path = "ARBrowser/ARBrowser-Demo/libHITLabNZAR";
+			sourceTree = "<group>";
+		};
+		90F6918F15382CC100E353C4 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				90F6919215382CC100E353C4 /* ARBrowserView.h */,
+				90F6919515382CC100E353C4 /* ARLocationController.h */,
+				90F6919815382CC100E353C4 /* ARModel.h */,
+				90F6919915382CC100E353C4 /* ARVideoBackground.h */,
+				90F6919A15382CC100E353C4 /* ARVideoFrameController.h */,
+				90F6919B15382CC100E353C4 /* ARWorldLocation.h */,
+				90F6919C15382CC100E353C4 /* ARWorldPoint.h */,
+				90F6919E15382CC100E353C4 /* EAGLView.h */,
+				90F6919F15382CC100E353C4 /* Endian.h */,
+				90F691A015382CC100E353C4 /* Matrix.h */,
+				90F691A115382CC100E353C4 /* Quaternion.h */,
+				90F691A215382CC100E353C4 /* Texture2D.h */,
+				90F691A315382CC100E353C4 /* Transform.h */,
+				90F691A415382CC100E353C4 /* Vector.h */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		90F692F815382CF900E353C4 /* ARBrowser-Arrows */ = {
+			isa = PBXGroup;
+			children = (
+				90F692FB15382CF900E353C4 /* ARABrowserViewController.h */,
+				90F692FC15382CF900E353C4 /* ARABrowserViewController.mm */,
+				90F692FD15382CF900E353C4 /* ARAPath.h */,
+				90F692FE15382CF900E353C4 /* ARAPath.mm */,
+				90F692FF15382CF900E353C4 /* ARAPathController.h */,
+				90F6930015382CF900E353C4 /* ARAPathController.mm */,
+				90F6930315382CF900E353C4 /* ARASegment.h */,
+				90F6930415382CF900E353C4 /* ARASegment.mm */,
+			);
+			name = "ARBrowser-Arrows";
+			path = "ARBrowser/ARBrowser-Arrows";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -366,6 +469,7 @@
 				90C6E56D1536DF6400E2E421 /* scale8.ags in Resources */,
 				90C6E56E1536DF6400E2E421 /* scale9.ags in Resources */,
 				90E3EFEA1537CD090023A65D /* UNRouteView.xib in Resources */,
+				90F69337153848FC00E353C4 /* Models in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,11 +489,15 @@
 				7E6260D71535997E00D595F2 /* UNButton.m in Sources */,
 				90C6E5821536E00000E2E421 /* UNRoute.m in Sources */,
 				90C6E5881536F7F800E2E421 /* UNStep.m in Sources */,
-				90E3EFEE1537CD1D0023A65D /* UNRouteViewController.m in Sources */,
+				90E3EFEE1537CD1D0023A65D /* UNRouteViewController.mm in Sources */,
 				90E3EFF11537CE230023A65D /* UNRouteTableViewController.m in Sources */,
 				90E3EFF41537D1520023A65D /* UNRouteTableViewCell.m in Sources */,
 				90E3EFF9153817000023A65D /* NSObject+Dump.m in Sources */,
-				90F6911D15381D3E00E353C4 /* Dummy.cpp in Sources */,
+				90F6931015382CFA00E353C4 /* ARABrowserViewController.mm in Sources */,
+				90F6931115382CFA00E353C4 /* ARAPath.mm in Sources */,
+				90F6931215382CFA00E353C4 /* ARAPathController.mm in Sources */,
+				90F6931415382CFA00E353C4 /* ARASegment.mm in Sources */,
+				90F693351538489200E353C4 /* UNRouteController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +565,7 @@
 		7E6260A81533E5AD00D595F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Urban Navigation/Urban Navigation-Prefix.pch";
 				INFOPLIST_FILE = "Urban Navigation/Urban Navigation-Info.plist";
@@ -467,6 +576,7 @@
 					"\"$(SRCROOT)/QMapEngine/lib/Debug-iphonesimulator\"",
 					"\"$(SRCROOT)/QMapEngine/lib/Release-iphoneos\"",
 					"\"$(SRCROOT)/QMapEngine/lib/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/ARBrowser/ARBrowser-Demo/libHITLabNZAR\"",
 				);
 				OTHER_CFLAGS = "-DQ_MAP_ENGINE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -478,6 +588,7 @@
 		7E6260A91533E5AD00D595F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Urban Navigation/Urban Navigation-Prefix.pch";
 				INFOPLIST_FILE = "Urban Navigation/Urban Navigation-Info.plist";
@@ -488,6 +599,7 @@
 					"\"$(SRCROOT)/QMapEngine/lib/Debug-iphonesimulator\"",
 					"\"$(SRCROOT)/QMapEngine/lib/Release-iphoneos\"",
 					"\"$(SRCROOT)/QMapEngine/lib/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/ARBrowser/ARBrowser-Demo/libHITLabNZAR\"",
 				);
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",

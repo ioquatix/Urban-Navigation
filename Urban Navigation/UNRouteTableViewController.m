@@ -17,7 +17,12 @@
 
 - (void)setRoute:(UNRoute *)route {
 	[self willChangeValueForKey:@"route"];
+	
+	[_route autorelease];
+	[route retain];
+	
 	_route = route;
+	
 	[self didChangeValueForKey:@"route"];
 	
 	NSLog(@"Reload table data");
@@ -30,7 +35,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	if (section == 0) {
-		return [self.route.turns count];
+		return [self.route.steps count];
 	}
 	
 	return 0;
@@ -42,10 +47,10 @@
     UNRouteTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
 	if (cell == nil) {
-		cell = [UNRouteTableViewCell new];
+		cell = [[UNRouteTableViewCell new] autorelease];
 	}
 	
-	cell.turn = [self.route.turns objectAtIndex:indexPath.row];
+	cell.turn = [self.route.steps objectAtIndex:indexPath.row];
 	
     return cell;
 }

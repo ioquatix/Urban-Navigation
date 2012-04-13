@@ -31,7 +31,7 @@
 	NSMutableArray * markers = [NSMutableArray array];
 	
 	for (NSDictionary * markerRecord in [records objectForKey:@"Markers"]) {
-		UNMarker * marker = [UNMarker new];
+		UNMarker * marker = [[UNMarker new] autorelease];
 		
 		CLLocationCoordinate2D coordinate;
 		coordinate.latitude = [[markerRecord objectForKey:@"Latitude"] doubleValue];
@@ -72,6 +72,9 @@
 		}
 	}
 	
+	[_markers autorelease];
+	[markers retain];
+	
 	_markers = markers;
 	
 	[self didChangeValueForKey:@"markers"];
@@ -100,6 +103,12 @@
 	[mapView addSubview:navigationView];
 	[self focusOnSingapore];
 	
+	[mapView setShowsUserLocation:YES];
+	
+	UILongPressGestureRecognizer * dropPinGesture = [[[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleDropPinGesture:)] autorelease];
+	dropPinGesture.minimumPressDuration = 2.0; //user needs to press for 2 seconds
+	[mapView addGestureRecognizer:dropPinGesture];
+	
 	CGRect locationViewFrame = locationView.frame;
 	locationViewFrame.origin.x = 0;
 	locationViewFrame.origin.y = frame.size.height;
@@ -107,6 +116,25 @@
 	[mapView addSubview:locationView];
 	
 	[self.view addSubview:mapView];
+}
+
+- (void)handleDropPinGesture:(UIGestureRecognizer *)gestureRecognizer {
+    if (gestureRecognizer.state != UIGestureRecognizerStateBegan)
+        return;
+	
+    CGPoint touchPoint = [gestureRecognizer locationInView:mapView];   
+    CLLocationCoordinate2D coordinate = [mapView convertPoint:touchPoint toCoordinateFromView:mapView];	
+	
+	UNMarker * marker = [[UNMarker new] autorelease];
+	
+	marker.coordinate = coordinate;
+	marker.name = [NSString stringWithFormat:@"Generic Marker: %0.3f, %0.3f", coordinate.latitude, coordinate.longitude];
+
+	// Add a marker to the list of markers:
+	NSMutableArray * markers = [[self.markers mutableCopy] autorelease];
+	[markers addObject:marker];
+	
+	self.markers = markers;
 }
 
 - (void)viewDidLoad
@@ -166,7 +194,7 @@
 
 - (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id)overlay {
 	if (overlay == self.currentRoutePolyline) {
-		MKPolylineView * routeView = [[MKPolylineView alloc] initWithPolyline:self.currentRoutePolyline];
+		MKPolylineView * routeView = [[[MKPolylineView alloc] initWithPolyline:self.currentRoutePolyline] autorelease];
 		
 		routeView.fillColor = [UIColor redColor];
 		routeView.strokeColor = [UIColor redColor];
@@ -230,7 +258,7 @@
 	if (route) {
 		NSLog(@"Route: %@", route);
 		
-		UNRouteViewController * routeViewController = [UNRouteViewController new];
+		UNRouteViewController * routeViewController = [[UNRouteViewController new] autorelease];
 		routeViewController.route = route;
 		
 		 self.view.window.rootViewController = routeViewController;

@@ -19,20 +19,20 @@ const double Q_SCALE = 1000000.0;
 
 @implementation UNRoute
 
-@synthesize turns = _turns;
+@synthesize steps = _steps;
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
 	self = [super init];
 	
 	if (self) {
-		self.turns = [aDecoder decodeObjectForKey:@"turns"];
+		self.steps = [aDecoder decodeObjectForKey:@"steps"];
 	}
 	
 	return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)coder {
-	[coder encodeObject:self.turns forKey:@"turns"];
+	[coder encodeObject:self.steps forKey:@"steps"];
 }
 
 + (UNRoute *)loadFromPath:(NSString*)path {
@@ -48,10 +48,10 @@ const double Q_SCALE = 1000000.0;
 }
 
 - (MKPolyline *)polylineValue {
-	CLLocationCoordinate2D coordinates[self.turns.count];
+	CLLocationCoordinate2D coordinates[self.steps.count];
 	
 	NSUInteger i = 0;
-	for (UNStep * turn in self.turns) {
+	for (UNStep * turn in self.steps) {
 		coordinates[i++] = turn.coordinate;
 	}
 	
@@ -103,7 +103,7 @@ const double Q_SCALE = 1000000.0;
 
 + (UNRoute *) bestRouteFrom:(CLLocationCoordinate2D)from to:(CLLocationCoordinate2D)to {
 	QMapEngine * engine = [self sharedMapEngine];
-	Navigation * navigation = [Navigation new];
+	Navigation * navigation = [[Navigation new] autorelease];
 	navigation.iMapEngine = engine;
 	
 	long avoid[1] = {0};
@@ -116,7 +116,7 @@ const double Q_SCALE = 1000000.0;
 	[navigation findRouteFrom:fromPoint to:toPoint avoid:avoid option:Fastest reroute:NO startPtPrev:fromPoint];
 		
 	if ([navigation IsRouteAvailable]) {
-		NSMutableArray * turns = [NSMutableArray array];
+		NSMutableArray * steps = [NSMutableArray array];
 		
 		for (TurnData * t in navigation.turnData) {
 			CLLocationCoordinate2D at = {
@@ -124,17 +124,17 @@ const double Q_SCALE = 1000000.0;
 				(CLLocationDegrees)t.ptLocation.x / Q_SCALE
 			};
 			
-			UNStep * turn = [UNStep new];
+			UNStep * turn = [[UNStep new] autorelease];
 			turn.coordinate = at;
 			turn.name = t.strNextRoadName1;
 			turn.action = [self actionForTurnType:t.nType];
 			turn.distance = t.nDistRemaining;
 			
-			[turns addObject:turn];
+			[steps addObject:turn];
 		}
 		
-		UNRoute * route = [UNRoute new];
-		route.turns = turns;
+		UNRoute * route = [[UNRoute new] autorelease];
+		route.steps = steps;
 		
 		return route;
 	}
@@ -144,7 +144,7 @@ const double Q_SCALE = 1000000.0;
 #endif
 
 - (NSString *)description {
-	return [NSString stringWithFormat:@"<UNRoute turns=%@>", self.turns];
+	return [NSString stringWithFormat:@"<UNRoute steps=%@>", self.steps];
 }
 
 @end
