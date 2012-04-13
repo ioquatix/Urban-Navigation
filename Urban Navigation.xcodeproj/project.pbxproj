@@ -426,7 +426,7 @@
 			attributes = {
 				CLASSPREFIX = UN;
 				LastUpgradeCheck = 0430;
-				ORGANIZATIONNAME = "Orion Transfer Ltd";
+				ORGANIZATIONNAME = "";
 			};
 			buildConfigurationList = 7E6260801533E5AC00D595F2 /* Build configuration list for PBXProject "Urban Navigation" */;
 			compatibilityVersion = "Xcode 3.2";
