@@ -26,6 +26,8 @@
 		7E6260D415355B1300D595F2 /* Markers in Resources */ = {isa = PBXBuildFile; fileRef = 7E6260D315355B1300D595F2 /* Markers */; };
 		7E6260D71535997E00D595F2 /* UNButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6260D61535997E00D595F2 /* UNButton.m */; };
 		7EDADD281536913800FB6255 /* UNMapView in Resources */ = {isa = PBXBuildFile; fileRef = 7EDADD271536913800FB6255 /* UNMapView */; };
+		904CE31A153FE3A600C94FBB /* ARALocalArrow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 904CE30C153FE34B00C94FBB /* ARALocalArrow.mm */; };
+		90C2BEE21540272E00FC7B75 /* Project.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 90C2BEE11540272E00FC7B75 /* Project.rtf */; };
 		90C6E5641536DF6400E2E421 /* scale.bin in Resources */ = {isa = PBXBuildFile; fileRef = 90C6E5591536DF6400E2E421 /* scale.bin */; };
 		90C6E5651536DF6400E2E421 /* scale.rtl in Resources */ = {isa = PBXBuildFile; fileRef = 90C6E55A1536DF6400E2E421 /* scale.rtl */; };
 		90C6E5661536DF6400E2E421 /* scale10.ags in Resources */ = {isa = PBXBuildFile; fileRef = 90C6E55B1536DF6400E2E421 /* scale10.ags */; };
@@ -89,6 +91,10 @@
 		7E6260D51535997E00D595F2 /* UNButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNButton.h; sourceTree = "<group>"; };
 		7E6260D61535997E00D595F2 /* UNButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNButton.m; sourceTree = "<group>"; };
 		7EDADD271536913800FB6255 /* UNMapView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UNMapView; sourceTree = "<group>"; };
+		904CE30B153FE34B00C94FBB /* ARALocalArrow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARALocalArrow.h; sourceTree = "<group>"; };
+		904CE30C153FE34B00C94FBB /* ARALocalArrow.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ARALocalArrow.mm; sourceTree = "<group>"; };
+		904CE31D153FE48400C94FBB /* ARRendering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARRendering.h; sourceTree = "<group>"; };
+		90C2BEE11540272E00FC7B75 /* Project.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Project.rtf; sourceTree = "<group>"; };
 		90C6E5591536DF6400E2E421 /* scale.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = scale.bin; sourceTree = "<group>"; };
 		90C6E55A1536DF6400E2E421 /* scale.rtl */ = {isa = PBXFileReference; lastKnownFileType = file; path = scale.rtl; sourceTree = "<group>"; };
 		90C6E55B1536DF6400E2E421 /* scale10.ags */ = {isa = PBXFileReference; lastKnownFileType = file; path = scale10.ags; sourceTree = "<group>"; };
@@ -180,6 +186,7 @@
 		7E62607B1533E5AC00D595F2 = {
 			isa = PBXGroup;
 			children = (
+				90C2BEE11540272E00FC7B75 /* Project.rtf */,
 				90F692F815382CF900E353C4 /* ARBrowser-Arrows */,
 				90F6918D15382CC100E353C4 /* libHITLabNZAR */,
 				90C6E53F1536DE2A00E2E421 /* QMapEngine */,
@@ -367,6 +374,7 @@
 				90F6919215382CC100E353C4 /* ARBrowserView.h */,
 				90F6919515382CC100E353C4 /* ARLocationController.h */,
 				90F6919815382CC100E353C4 /* ARModel.h */,
+				904CE31D153FE48400C94FBB /* ARRendering.h */,
 				90F6919915382CC100E353C4 /* ARVideoBackground.h */,
 				90F6919A15382CC100E353C4 /* ARVideoFrameController.h */,
 				90F6919B15382CC100E353C4 /* ARWorldLocation.h */,
@@ -393,6 +401,8 @@
 				90F6930015382CF900E353C4 /* ARAPathController.mm */,
 				90F6930315382CF900E353C4 /* ARASegment.h */,
 				90F6930415382CF900E353C4 /* ARASegment.mm */,
+				904CE30B153FE34B00C94FBB /* ARALocalArrow.h */,
+				904CE30C153FE34B00C94FBB /* ARALocalArrow.mm */,
 			);
 			name = "ARBrowser-Arrows";
 			path = "ARBrowser/ARBrowser-Arrows";
@@ -470,6 +480,7 @@
 				90C6E56E1536DF6400E2E421 /* scale9.ags in Resources */,
 				90E3EFEA1537CD090023A65D /* UNRouteView.xib in Resources */,
 				90F69337153848FC00E353C4 /* Models in Resources */,
+				90C2BEE21540272E00FC7B75 /* Project.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +509,7 @@
 				90F6931215382CFA00E353C4 /* ARAPathController.mm in Sources */,
 				90F6931415382CFA00E353C4 /* ARASegment.mm in Sources */,
 				90F693351538489200E353C4 /* UNRouteController.mm in Sources */,
+				904CE31A153FE3A600C94FBB /* ARALocalArrow.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
