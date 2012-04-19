@@ -159,6 +159,8 @@
 }
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
+	if (![view.annotation isKindOfClass:[UNMarker class]]) return;
+	
 	UNMarker * marker = (UNMarker *)view.annotation;
 	
 	navigationNameLabel.text = marker.title;

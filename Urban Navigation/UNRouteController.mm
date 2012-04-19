@@ -16,8 +16,9 @@
 	NSMutableArray * points = [NSMutableArray arrayWithCapacity:route.steps.count];
 	
 	for (UNStep * step in route.steps) {
-		ARWorldPoint * point = [[ARWorldPoint new] autorelease];	
+		ARWorldPoint * point = [[ARWorldPoint new] autorelease];
 		[point setCoordinate:step.coordinate altitude:EARTH_RADIUS];
+		
 		point.model = self.markerModel;
 		
 		[points addObject:point];
