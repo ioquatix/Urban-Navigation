@@ -7,6 +7,7 @@
 //
 
 #import "ARAPathController.h"
+#import "UNRoute.h"
 
 @interface UNRouteController : ARAPathController
 

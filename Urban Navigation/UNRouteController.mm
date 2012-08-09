@@ -17,7 +17,7 @@
 	
 	for (UNStep * step in route.steps) {
 		ARWorldPoint * point = [[ARWorldPoint new] autorelease];
-		[point setCoordinate:step.coordinate altitude:EARTH_RADIUS];
+		[point setCoordinate:step.coordinate altitude:0];
 		
 		point.model = self.markerModel;
 		
