@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B00CBCF15D375190036A43F /* ARANavigationViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBCD15D375040036A43F /* ARANavigationViewController.mm */; };
+		1B00CBD015D3752E0036A43F /* ARANavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B00CBCB15D375040036A43F /* ARANavigationView.xib */; };
+		1B00CBD115D375350036A43F /* ARAIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBC615D375040036A43F /* ARAIconView.m */; };
+		1B00CBD215D375350036A43F /* ARAMiniMapView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CBCA15D375040036A43F /* ARAMiniMapView.mm */; };
 		7E62608B1533E5AD00D595F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E62608A1533E5AD00D595F2 /* UIKit.framework */; };
 		7E62608D1533E5AD00D595F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E62608C1533E5AD00D595F2 /* Foundation.framework */; };
 		7E62608F1533E5AD00D595F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E62608E1533E5AD00D595F2 /* CoreGraphics.framework */; };
@@ -63,6 +67,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B00CBC515D375040036A43F /* ARAIconView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARAIconView.h; sourceTree = "<group>"; };
+		1B00CBC615D375040036A43F /* ARAIconView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARAIconView.m; sourceTree = "<group>"; };
+		1B00CBC715D375040036A43F /* ARALocalArrow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARALocalArrow.h; sourceTree = "<group>"; };
+		1B00CBC815D375040036A43F /* ARALocalArrow.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ARALocalArrow.mm; sourceTree = "<group>"; };
+		1B00CBC915D375040036A43F /* ARAMiniMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARAMiniMapView.h; sourceTree = "<group>"; };
+		1B00CBCA15D375040036A43F /* ARAMiniMapView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ARAMiniMapView.mm; sourceTree = "<group>"; };
+		1B00CBCB15D375040036A43F /* ARANavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARANavigationView.xib; sourceTree = "<group>"; };
+		1B00CBCC15D375040036A43F /* ARANavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARANavigationViewController.h; sourceTree = "<group>"; };
+		1B00CBCD15D375040036A43F /* ARANavigationViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ARANavigationViewController.mm; sourceTree = "<group>"; };
 		7E6260861533E5AD00D595F2 /* Urban Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Urban Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E62608A1533E5AD00D595F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7E62608C1533E5AD00D595F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -403,6 +416,15 @@
 				90F6930415382CF900E353C4 /* ARASegment.mm */,
 				904CE30B153FE34B00C94FBB /* ARALocalArrow.h */,
 				904CE30C153FE34B00C94FBB /* ARALocalArrow.mm */,
+				1B00CBC515D375040036A43F /* ARAIconView.h */,
+				1B00CBC615D375040036A43F /* ARAIconView.m */,
+				1B00CBC715D375040036A43F /* ARALocalArrow.h */,
+				1B00CBC815D375040036A43F /* ARALocalArrow.mm */,
+				1B00CBC915D375040036A43F /* ARAMiniMapView.h */,
+				1B00CBCA15D375040036A43F /* ARAMiniMapView.mm */,
+				1B00CBCB15D375040036A43F /* ARANavigationView.xib */,
+				1B00CBCC15D375040036A43F /* ARANavigationViewController.h */,
+				1B00CBCD15D375040036A43F /* ARANavigationViewController.mm */,
 			);
 			name = "ARBrowser-Arrows";
 			path = "ARBrowser/ARBrowser-Arrows";
@@ -481,6 +503,7 @@
 				90E3EFEA1537CD090023A65D /* UNRouteView.xib in Resources */,
 				90F69337153848FC00E353C4 /* Models in Resources */,
 				90C2BEE21540272E00FC7B75 /* Project.rtf in Resources */,
+				1B00CBD015D3752E0036A43F /* ARANavigationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +533,9 @@
 				90F6931415382CFA00E353C4 /* ARASegment.mm in Sources */,
 				90F693351538489200E353C4 /* UNRouteController.mm in Sources */,
 				904CE31A153FE3A600C94FBB /* ARALocalArrow.mm in Sources */,
+				1B00CBCF15D375190036A43F /* ARANavigationViewController.mm in Sources */,
+				1B00CBD115D375350036A43F /* ARAIconView.m in Sources */,
+				1B00CBD215D375350036A43F /* ARAMiniMapView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
